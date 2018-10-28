@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package server;
+
+// Notifications
+message Notifications {
+    repeated Notification nots =1;
+}
+
+// Notification
+message Notification {
+    // notification id. Example:  “id” : “777”,
+    string id = 1;
+    // notification provider. Example:  “provider” : “Kyren”,
+    string provider =2;
+    // notification service. Example:  “service” : “untiphishing”}
+    string service =3;
+}
